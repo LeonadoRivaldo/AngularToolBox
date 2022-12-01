@@ -3,5 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "alerts": {
+      "projectType": "library",
+      "root": "projects/alerts",
+      "sourceRoot": "projects/alerts/src",
+      "prefix": "ngtb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/alerts/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/alerts/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/alerts/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/alerts/src/test.ts",
+            "tsConfig": "projects/alerts/tsconfig.spec.json",
+            "karmaConfig": "projects/alerts/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "7828bf9f-0e48-447b-89c3-776d91f5cb76"
   }
 }

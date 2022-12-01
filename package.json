@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "alerts:path": "cd projects/alerts",
+    "alerts:patch": "npm run alerts:path && npm version patch"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.10",
     "@angular/cli": "~14.2.8",
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
@@ -32,6 +35,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^14.2.0",
     "typescript": "~4.7.2"
   }
 }
