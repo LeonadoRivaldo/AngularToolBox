@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "alerts:path": "cd projects/alerts",
-    "alerts:patch": "npm run alerts:path && npm version patch"
+    "alerts:patch": "cd projects/alerts && npm version patch"
   },
   "private": true,
   "dependencies": {
