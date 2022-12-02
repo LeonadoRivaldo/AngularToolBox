@@ -7,10 +7,13 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "alerts:patch": "cd projects/alerts && npm version patch"
+    "alerts:build": "ng build alerts --configuration production",
+    "alerts:patch": "cd projects/alerts && npm version patch",
+    "alerts:publish": "cd dist/alerts && npm publish --public-acess"
   },
   "private": true,
   "dependencies": {
+    "@angular-eslint/schematics": "^1.0.0",
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",

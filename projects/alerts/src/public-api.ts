@@ -3,14 +3,12 @@
  */
 
 
-/** COMPONENTS
-export * from './lib/toolbox-alerts-toast/toolbox-alerts-toast.component';
-*/
+/** COMPONENTS */
 
 /** SERVICES */
-export * from './lib/services/alerts.service';
+export * from './lib/services/tb-alerts.service';
 
 
 /** MODULES */
-export * from './lib/alerts.module';
-export * from './lib/toolbox-alerts-toast/toolbox-alerts-toast.module';
+export * from './lib/tb-alerts.module';
+export * from './lib/tb-toasts/tb-toasts.module';
